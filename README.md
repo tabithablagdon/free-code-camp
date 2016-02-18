@@ -1,2 +1,4 @@
 # free-code-camp
-<b>Projects and algorithms developed through FreeCodeCamp.com curriculum</b>
+Projects and algorithms developed through my journey through <a href="http://www.freecodecamp.com">FreeCodeCamp.com</a> curriculum
+
+
