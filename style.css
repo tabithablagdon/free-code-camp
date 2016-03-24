@@ -1,0 +1,56 @@
+body {
+  background-color: #000;
+  margin: 2em;
+}
+
+footer {
+  color: #FFF;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.calculator {
+  background-color: gray;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2em;
+  width: 250px;
+  text-align: center;
+}
+
+.calc-brand {
+  font-family: 'pacifico';
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.calc-row {
+  margin-bottom: 5px;
+}
+
+/* CSS for the individual buttons and display */
+
+#clear, #clearLast {
+  font-weight: 600;
+  width: 68px;
+}
+
+#enter {
+  font-weight: 600;
+  width: 100px;
+}
+
+#subtract, #multiply, #divide, #add {
+  font-weight: 600;
+  width: 48px;
+}
+
+#screen {
+  box-shadow: inset 1px 1px 2px #000000;
+  font-size: 2em;
+  font-weight: 600;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 195px;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+  <title>Tee's JavaScript Calculator</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="calc-row">
+      <p class="calc-brand">Tee's Calculator</p>
+    </div>
+
+    <div class="calc-row">
+        <input type="text" id="screen" class="form-control" value="0">
+    </div>
+    <div class="calc-row">
+        <button id="clear" class="btn btn-danger btn-lg" onClick="allClear();">AC</button>
+        <button id="clearLast" class="btn btn-danger btn-lg" onClick="clearLast();">CE</button>
+
+      <button id="divide" class="btn btn-success btn-lg" onClick="divide();">/</button>
+    </div>
+    <div class="calc-row">
+      <button id="7" class="btn btn-primary btn-lg" onClick="number(7);">7</button>
+      <button id="8" class="btn btn-primary btn-lg" onClick="number(8);">8</button>
+      <button id="9" class="btn btn-primary btn-lg" onClick="number(9);">9</button>
+
+      <button id="multiply" class="btn btn-success btn-lg" onClick="multiply();">*</button>
+    </div>
+    <div class="calc-row">
+      <button id="4" class="btn btn-primary btn-lg" onClick="number(4);">4</button>
+      <button id="5" class="btn btn-primary btn-lg" onClick="number(5);">5</button>
+      <button id="6" class="btn btn-primary btn-lg" onClick="number(6);">6</button>
+
+      <button id="subtract" class="btn btn-success btn-lg" onClick="subtract();">-</button>
+    </div>
+    <div class="calc-row">
+      <button id="1" class="btn btn-primary btn-lg" onClick="number(1);">1</button>
+      <button id="2" class="btn btn-primary btn-lg" onClick="number(2);">2</button>
+      <button id="3" class="btn btn-primary btn-lg" onClick="number(3);">3</button>
+      <button id="add" class="btn btn-success btn-lg" onClick="add();">+</button>
+    </div>
+    <div class="calc-row">
+      <button id="0" class="btn btn-primary btn-lg" onClick="number(0);">0</button>
+      <button id="decimal" class="btn btn-primary btn-lg" onClick="decimal();">.</button>
+      <button id="enter" class="btn btn-warning btn-lg" onClick="enter();">ENTER</button>
+    </div>
+
+  </div>
+  <footer>
+    <small>by <a href="http://codepen.io/tblagdon/">Tee</a></small>
+  </footer>
+
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js-calculator.js"></script>
+</body>
+</html>
