@@ -22,6 +22,7 @@ var number = function(val) {
 */
 
 
+
 function decimal() {
   calc += ".";
   document.getElementById("screen").value = calc;
