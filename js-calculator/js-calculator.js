@@ -14,10 +14,13 @@ To add:
 
 var calc = "";
 
+/*
 var number = function(val) {
   calc += Number(val);
   document.getElementById("screen").value = calc;
 }
+*/
+
 
 function decimal() {
   calc += ".";
@@ -59,10 +62,14 @@ function clearLast() {
 }
 
 $(document).ready(function() {
+
   // display number on screen when clicked
   $('.number').on('click', function() {
     var num = $(this).val();
-    $('#screen').val(num);
+    calc += num;
+    $('#screen').val(calc);
   });
+
+
 
 });
