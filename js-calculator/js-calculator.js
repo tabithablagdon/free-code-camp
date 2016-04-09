@@ -58,7 +58,11 @@ function clearLast() {
   document.getElementById("screen").value = calc;
 }
 
-$(document).ready(function(){
-
+$(document).ready(function() {
+  // display number on screen when clicked
+  $('.number').on('click', function() {
+    var num = $(this).val();
+    $('#screen').val(num);
+  });
 
 });
