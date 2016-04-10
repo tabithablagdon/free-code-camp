@@ -1,5 +1,7 @@
 <h1>Tee's JavaScript Calculator</h1>
 
+<b>Description</b>: JavaScript web calculator built with HTML, CSS, JavaScript, jQuery, and Bootstrap
+
 Calculator needs to fulfill the following user stories:
  - User Story: I can add, subtract, multiply and divide two numbers.
  - User Story: I can clear the input field with a clear button.
