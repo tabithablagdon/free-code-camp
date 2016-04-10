@@ -9,54 +9,10 @@ Bugs to fix:
 To add:
 1) Percentage button
 2) Parentheses?
-
-var number = function(val) {
-  calc += Number(val);
-  document.getElementById("screen").value = calc;
-}
-
-function decimal() {
-  calc += ".";
-  document.getElementById("screen").value = calc;
-}
-
-function add() {
-  calc += "+";
-  document.getElementById("screen").value = calc;
-}
-
-function subtract() {
-  calc += "-";
-  document.getElementById("screen").value = calc;
-}
-
-function divide(){
-  calc += "/";
-  document.getElementById("screen").value = calc;
-}
-
-function multiply() {
-  calc += "*";
-  document.getElementById("screen").value = calc;
-}
 */
 
 var calc = "";
 
-
-function enter() {
-  document.getElementById("screen").value = eval(calc);
-}
-
-function allClear() {
-  calc = "";
-  document.getElementById("screen").value = "";
-}
-
-function clearLast() {
-  calc = calc.slice(0, -1);
-  document.getElementById("screen").value = calc;
-}
 
 $(document).ready(function() {
 
