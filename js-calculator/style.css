@@ -30,8 +30,8 @@ footer {
 
 /* CSS for the individual buttons and display */
 
-#clear, #clearLast {
-  font-weight: 600;
+#clearAll, #clearLast {
+  font-weight: 700;
   width: 68px;
 }
 
