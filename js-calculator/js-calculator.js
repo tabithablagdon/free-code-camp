@@ -3,8 +3,8 @@ JavaScript Calculator Project
 Coded by Tee Blagdon
 
 Bugs to fix:
-1) Double-clicking operators
-2) Operations after the enter sign - using the total
+ - Double-clicking operators (amost done)
+ - Operations after the enter sign - using the total
 
 To add:
 1) Percentage button
@@ -12,7 +12,6 @@ To add:
 */
 
 var calc = "";
-
 
 $(document).ready(function() {
 
@@ -32,13 +31,13 @@ $(document).ready(function() {
     $('#screen').val(eval(calc));
   });
 
-  $('#clearAll').on('click', function() {
-    calc = "";
-    $('#screen').val(eval(calc));
-  });
-
-  $('#clearLast').on('click', function() {
-    calc = calc.slice(0, -1);
+  $('.clear').on('click', function() {
+    if ($(this).val() === "all") {
+      calc = "";
+    }
+    else {
+      calc = calc.slice(0, -1);
+    }
     $('#screen').val(calc);
   });
 
