@@ -1,19 +1,21 @@
 /*
 JavaScript Calculator Project
-Coded by Tee Blagdon
+Code by Tee Blagdon
 
 Bugs to fix:
- - Double-clicking operators (amost done)
+ - Double-clicking operators - should change to last clicked operator
  - Operations after the enter sign - using the total
+ - Leading with operators
+ - Clearing last and left with operator - won't evaluate
 
-To add:
-1) Percentage button
-2) Parentheses?
+Features to add:
+ - After click "Enter", new operations uses the previous total's number as starting value
+
 */
 
-var calc = "";
-
 $(document).ready(function() {
+
+  var calc = "";
 
   // display number on screen when clicked
   $('.values').on('click', function() {
@@ -27,17 +29,14 @@ $(document).ready(function() {
     $('#screen').val(calc);
   });
 
+  // compute total of entries
   $('#enter').on('click', function() {
     $('#screen').val(eval(calc));
   });
 
+  // clear screen - either all or last entry
   $('.clear').on('click', function() {
-    if ($(this).val() === "all") {
-      calc = "";
-    }
-    else {
-      calc = calc.slice(0, -1);
-    }
+    calc = $(this).val() === "all" ? "" : calc.slice(0, -1);
     $('#screen').val(calc);
   });
 
