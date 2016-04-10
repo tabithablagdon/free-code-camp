@@ -10,18 +10,10 @@ To add:
 1) Percentage button
 2) Parentheses?
 
-*/
-
-var calc = "";
-
-/*
 var number = function(val) {
   calc += Number(val);
   document.getElementById("screen").value = calc;
 }
-*/
-
-
 
 function decimal() {
   calc += ".";
@@ -47,6 +39,10 @@ function multiply() {
   calc += "*";
   document.getElementById("screen").value = calc;
 }
+*/
+
+var calc = "";
+
 
 function enter() {
   document.getElementById("screen").value = eval(calc);
@@ -65,12 +61,29 @@ function clearLast() {
 $(document).ready(function() {
 
   // display number on screen when clicked
-  $('.number').on('click', function() {
-    var num = $(this).val();
-    calc += num;
+  $('.values').on('click', function() {
+    var val = $(this).val();
+    if (isNaN(val) && isNaN(calc[calc.length-1])) {
+      calc[calc.length-1] = val;
+    }
+    else {
+      calc += val;
+    }
     $('#screen').val(calc);
   });
 
+  $('#enter').on('click', function() {
+    $('#screen').val(eval(calc));
+  });
 
+  $('#clearAll').on('click', function() {
+    calc = "";
+    $('#screen').val(eval(calc));
+  });
+
+  $('#clearLast').on('click', function() {
+    calc = calc.slice(0, -1);
+    $('#screen').val(calc);
+  });
 
 });
