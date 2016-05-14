@@ -1,0 +1,68 @@
+body {
+  background: url("http://www.wallpaper4me.com/images/wallpapers/Optimized-chucknorrisapproved-364971.jpeg") #000000 no-repeat fixed;
+  background-size: cover;
+  text-align: center;
+
+}
+
+footer {
+  color: #000;
+  margin: 2em;
+}
+
+a:link {
+  color: gray;
+  font-style: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #000;
+  font-style: none;
+}
+
+a:visited {
+  color: #FFF;
+}
+
+.header-text {
+  color: #fff;
+  font-size: 5em;
+  font-family: 'lobster';
+  font-weight: 500;
+  padding-top: .5em;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.header-text2 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'raleway';
+  font-weight: 400;
+  text-shadow: 1px 1px 10px black;
+}
+
+.joke {
+  color: #fff;
+  font-family: 'raleway';
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#joke {
+  vertical-align: middle;
+}
+
+.joke-box {
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #000;
+  margin: 2em auto;
+  min-height: 150px;
+  padding: 3em;
+  vertical-align: middle;
+  max-width: 45%;
+}
